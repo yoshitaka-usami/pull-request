@@ -1,0 +1,88 @@
+/* 共通パーツは外に記述 */
+.p-mainMenu {
+  background-color: #8c2727;
+  height: 100%;
+}
+
+.p-mainMenu__article:not(:last-child) {
+  border-bottom: solid;
+}
+
+.p-mainMenu__article--title {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 796px) {
+
+  .p-mainMenu {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .p-mainMenu__article--logo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .p-mainMenu__title {
+    font-size: 30px;
+  }
+
+  .p-mainMenu__article {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    column-gap: 30px;
+  }
+
+  .p-mainMenu__article--title {
+    border-bottom: solid;
+    display: inline-block;
+  }
+
+  .p-mainMenu__article--text {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 795px) {
+
+  .p-mainMenu {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .p-mainMenu__article--logo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .p-mainMenu__title {
+    font-size: 20px;
+  }
+
+  .p-mainMenu__article {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .p-mainMenu div:first-of-type {
+    margin-top: 50px;
+  }
+
+  .p-mainMenu__article--title {
+    margin-top: 30px;
+  }
+
+  .p-mainMenu__article--text {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+
+}
